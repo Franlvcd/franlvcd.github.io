@@ -1,7 +1,8 @@
 ---
 layout: about
-title: ""
+title: About
 permalink: /
+# nav: true
 ---
 
 <!-- ## <span style="color: #e569d4ff;"><strong>Frances Fengyi Yang</strong></span> -->
