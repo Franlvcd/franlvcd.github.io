@@ -19,13 +19,24 @@ permalink: /
 
 ### About Me
 
+<div style="height: 1rem;"></div>
 <div class="row align-items-start">
   <div class="col-md-3 mb-3">
-    <img src="{{ '/assets/img/IMG_5740_Original.jpg' | relative_url }}" class="img-fluid rounded" alt="Profile photo">
+    <img src="{{ '/assets/img/IMG_5740_Original.jpg' | relative_url }}" class="img-fluid rounded mb-3" alt="Profile photo">
+
+    <h6 class="text-muted">Hobby</h6>
+
+    <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+      <a class="badge badge-pill badge-light" style="border:1px solid var(--global-divier-color);">📷 Photography</a>
+      <a class="badge badge-pill badge-light" style="border:1px solid var(--global-divier-color);">🥘 Food</a>
+      <a class="badge badge-pill badge-light" style="border:1px solid var(--global-divier-color);">🎾 Tennis</a>
+      <a class="badge badge-pill badge-light" style="border:1px solid var(--global-divier-color);">🚘 Road Trips</a>
+      <a class="badge badge-pill badge-light" style="border:1px solid var(--global-divier-color);">🤿 Water Activities</a>
+    </div>
   </div>
   <div class="col-md-9">
     <p>
-      Frances Yang is a final-year PhD candidate at the <a href="https://adelaideuni.edu.au/research/australian-institute-for-machine-learning/" target="_blank">Australian Institute for Machine Learning (AIML)</a>, The University of Adelaide, supervised by <a href="https://www.ai4space.group/" target="_blank">Prof. Tat-Jun Chin</a> and <a href="https://cs.adelaide.edu.au/~frank/" target="_blank">Prof. Frank Neumann</a>. Completing her PhD in 2025, she focuses on developing quantum algorithms for foundational problems in machine learning and computer vision, with a particular emphasis on quantum-enhanced geometric reasoning and optimization. She has experience working with both annealing-based and gate-based quantum platforms and has implemented scalable solutions for perception and decision-making tasks.
+      Frances Yang is a final-year PhD candidate at the <a href="https://adelaideuni.edu.au/research/australian-institute-for-machine-learning/" target="_blank">Australian Institute for Machine Learning (AIML)</a>, The University of Adelaide, supervised by <a href="https://www.ai4space.group/" target="_blank">Prof. Tat-Jun Chin</a> and <a href="https://cs.adelaide.edu.au/~frank/" target="_blank">Prof. Frank Neumann</a>. Completing her PhD in 2026, she focuses on developing quantum algorithms for foundational problems in machine learning and computer vision, with a particular emphasis on quantum-enhanced geometric reasoning and optimization. She has experience working with both annealing-based and gate-based quantum platforms and has implemented scalable solutions for perception and decision-making tasks.
     </p>
     <p>
       Frances is eager to join a team advancing quantum hardware, where she can contribute to showcasing hardware capabilities and improving quantum-classical workflows through rigorous algorithmic benchmarking and performance analysis. With a strong foundation in algorithm development, hands-on Python programming, and experience translating research into practical systems, she brings a deep commitment to pushing the boundaries of quantum computing in real-world applications.
@@ -35,8 +46,22 @@ permalink: /
 
 ---
 
+### Featured Publications
+
+<!-- > Featured papers are marked in your BibTeX/metadata (e.g., `featured = {true}`) and rendered automatically here. -->
+
+<div class="publications">
+<!-- {% for item in site.data.bib_publications | where: "featured", true %}
+  {{ item | publication }}
+{% endfor %} -->
+{% bibliography %}
+</div>
+
+---
+
 ### Research Directions
 
+<div style="height: 1rem;"></div>
 <div class="row">
   <div class="col-md-4 mb-4">
     <div class="card h-100">
@@ -81,15 +106,5 @@ permalink: /
   </div>
 </div>
 
----
 
-### Featured Publications
 
-<!-- > Featured papers are marked in your BibTeX/metadata (e.g., `featured = {true}`) and rendered automatically here. -->
-
-<div class="publications">
-<!-- {% for item in site.data.bib_publications | where: "featured", true %}
-  {{ item | publication }}
-{% endfor %} -->
-{% bibliography %}
-</div>
