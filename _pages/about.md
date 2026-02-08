@@ -1,23 +1,95 @@
 ---
 layout: about
-title: About Me
+title: ""
 permalink: /
-subtitle: 
-
-profile:
-  align: right
-  image: bio_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-
-news: true # includes a list of news items
-latest_posts: false # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
 ---
 
-I am currently a postdoctoral researcher at the [Australian Institute for Machine Learning (AIML)](https://en.wikipedia.org/wiki/Australian_Institute_for_Machine_Learning), the University of Adelaide, working with Prof. [Anton van den Hengel](https://scholar.google.com.au/citations?user=nMGZ2ZQAAAAJ&hl=en) and A/Prof. [Qi Wu](https://scholar.google.co.uk/citations?user=aKXe1FEAAAAJ&hl=en). I received my Ph.D. in computer science from the University of Adelaide in 2024, supervised by A/Prof. [Qi Wu](https://scholar.google.co.uk/citations?user=aKXe1FEAAAAJ&hl=en) and Asst. Prof. [Yuankai Qi](https://scholar.google.com/citations?user=mLqg5hYAAAAJ&hl=en). Prior to my Ph.D., I completed my master's degree at South China University of Technology, under the supervision of Prof. [Jian Chen](https://dblp.org/pid/49/6002-11.html) and Prof. [Mingkui Tan](https://scholar.google.com.au/citations?user=EVsoTGkAAAAJ&hl=en).
+<!-- ## <span style="color: #e569d4ff;"><strong>Frances Fengyi Yang</strong></span> -->
 
-My research focuses mainly on Controllable Generative AI for Multi-modality, (Multimodal) Large Language Models (LLMs), and Multimodal AI for Real-world Applications/Domains (e.g., Medicine, Architecture, and the Internet). I have over 20 peer-reviewed publications, most in flagship journals/conference proceedings, including IEEE-TPAMI/TIP/TMM, CVPR, NeurIPS, ICCV, etc. His research has attracted over 1,100 citations with an H-index of 14 (Google Scholar). I also serve as a reviewer for top-tier journals/conference proceedings, including Nature Communications, IEEE-TPAMI, IJCV, CVPR, ICML, NeurIPS, ICLR, ICCV, ECCV, etc.
+**Bridging quantum computing and computer vision — from quantum optimization to robust geometry and machine learning.**
 
-🌟🌟 <span style="color:red">I am currently on the job market (Assistant Prof. or Research Scientist).</span>  🌟🌟
+<p align="left">
+  <a class="btn btn-outline-secondary btn-sm" href="mailto:{{ site.email | default: 'fengyi.yang@adelaide.edu.au' }}">Email</a>
+  <!-- <a class="btn btn-outline-secondary btn-sm" href="https://scholar.google.com/">Google Scholar</a> -->
+  <!-- <a class="btn btn-outline-secondary btn-sm" href="https://github.com/{{ site.github_username | default: 'chenqi008' }}">GitHub</a> -->
+  <a class="btn btn-secondary btn-sm" href="https://www.linkedin.com/in/frances-fengyi-yang/" target="_blank"> LinkedIn</a>
+</p>
+
+---
+
+### About Me
+
+<div class="row align-items-start">
+  <div class="col-md-3 mb-3">
+    <img src="{{ '/assets/img/IMG_5740_Original.jpg' | relative_url }}" class="img-fluid rounded" alt="Profile photo">
+  </div>
+  <div class="col-md-9">
+    <p>
+      Frances Yang is a final-year PhD candidate at the <a href="https://adelaideuni.edu.au/research/australian-institute-for-machine-learning/" target="_blank">Australian Institute for Machine Learning (AIML)</a>, The University of Adelaide, supervised by <a href="https://www.ai4space.group/" target="_blank">Prof. Tat-Jun Chin</a> and <a href="https://cs.adelaide.edu.au/~frank/" target="_blank">Prof. Frank Neumann</a>. Completing her PhD in 2025, she focuses on developing quantum algorithms for foundational problems in machine learning and computer vision, with a particular emphasis on quantum-enhanced geometric reasoning and optimization. She has experience working with both annealing-based and gate-based quantum platforms and has implemented scalable solutions for perception and decision-making tasks.
+    </p>
+    <p>
+      Frances is eager to join a team advancing quantum hardware, where she can contribute to showcasing hardware capabilities and improving quantum-classical workflows through rigorous algorithmic benchmarking and performance analysis. With a strong foundation in algorithm development, hands-on Python programming, and experience translating research into practical systems, she brings a deep commitment to pushing the boundaries of quantum computing in real-world applications.
+    </p>
+  </div>
+</div>
+
+---
+
+### Research Directions
+
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{ '/assets/img/qml.png' | relative_url }}" alt="Quantum Machine Learning">
+      <div class="card-body">
+        <h5 class="card-title">Quantum Machine Learning</h5>
+        <p class="card-text">
+          I develop quantum-assisted learning methods that leverage quantum sampling for training.
+          Representative projects include training multilayer perceptrons via quantum annealing-based sampling, and
+          optimization with binary gradients on quantum annealers.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{ '/assets/img/qcv.jpg' | relative_url }}" alt="Quantum Computer Vision">
+      <div class="card-body">
+        <h5 class="card-title">Quantum Computer Vision</h5>
+        <p class="card-text">
+          I study how quantum computation can enhance core vision primitives, especially geometric estimation.
+          A key project is demonstrating robust fitting on a real gate-model quantum computer, targeting practical quantum advantage
+          for geometric reasoning pipelines.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{ '/assets/img/benchmark1.jpg' | relative_url }}" alt="Quantum Hardware Benchmarking">
+      <div class="card-body">
+        <h5 class="card-title">Quantum Hardware Benchmarking</h5>
+        <p class="card-text">
+          I benchmark quantum hardware and quantum-classical workflows with an algorithmic lens: scalability, robustness,
+          and end-to-end performance. This includes systematic solver comparisons and device-aware evaluation across
+          annealing and gate-based platforms.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+### Featured Publications
+
+<!-- > Featured papers are marked in your BibTeX/metadata (e.g., `featured = {true}`) and rendered automatically here. -->
+
+<div class="publications">
+<!-- {% for item in site.data.bib_publications | where: "featured", true %}
+  {{ item | publication }}
+{% endfor %} -->
+{% bibliography %}
+</div>

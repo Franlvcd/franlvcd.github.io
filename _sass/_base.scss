@@ -1289,6 +1289,12 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
+.card-title {
+  min-height: 3rem;   /* adjust if needed */
+  display: flex;
+  color: #{$purple-color} !important;
+}
+
 // highlight-search-term
 ::highlight(search) {
   background-color: var(--global-theme-color);
